@@ -188,9 +188,9 @@
 # print("{{0}} love{b}.{c}".format("I",b="fishC",c="com")) #打印{}
 # print("{0} : {1:.2f}".format("圆周率",3.1415926))
 
-result = "result is %s : %d" % ("张三",100)
-result2 = "result is %s : %d" % ("李四",50)
-print(result)
-print("%s  %s" % (result,result2))
-print("%5.1f" % 12.3456)
+# result = "result is %s : %d" % ("张三",100)
+# result2 = "result is %s : %d" % ("李四",50)
+# print(result)
+# print("%s  %s" % (result,result2))
+# print("%5.1f" % 12.3456)
 
