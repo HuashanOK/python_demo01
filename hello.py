@@ -78,15 +78,18 @@
 # print(names[3][2])
 
 #names = ["张三","李四","王五",["贾六","七","八"]]
-#names.remove("张三") #删除指定元素
-# name = names.pop(0) #将列表中指定元素 取出并删除 参数：索引  不带参数默认最后一个
+"""删除指定元素"""
+#names.remove("张三")
+"""将列表中指定元素 取出并删除 参数：索引  不带参数默认最后一个"""
+# name = names.pop(0)
 # print(name)
-# del names[0] #del python语句 可以删除元素或者变量
+"""del python语句 可以删除元素或者变量"""
+# del names[0]
 # print(names)
 # del names
 # print(names)
 
-#列表切片 slice 获得源列表拷贝
+"""列表切片 slice 获得源列表拷贝"""
 # list=["一","二","三","四","五","六"]
 # list2 = list[2:4]
 # list2 = list[:4]
@@ -117,7 +120,7 @@
 # print(list1.extend(list2))
 # print(list1*3) #列表里的元素复制三份
 
-#in 、not in 只能判断一层
+"""in 、not in 只能判断一层"""
 # list = ["一","二","三"]
 # list = ["一","二",["三","四"]]
 # print("一" in list)
@@ -181,7 +184,7 @@
 # str1 = "_".join(num)
 # print(str1)
 
-#字符串格式化
+"""#字符串格式化"""
 # print("{0} love{1}.{2}".format("I","fishC","com")) #位置参数
 # print("{a} love{b}.{c}".format(a="I",b="fishC",c="com")) #关键字参数
 # print("{0} love{b}.{c}".format("I",b="fishC",c="com")) #位置参数再关键字参数前
@@ -193,4 +196,51 @@
 # print(result)
 # print("%s  %s" % (result,result2))
 # print("%5.1f" % 12.3456)
+
+"""序列"""
+"""list()；tuple();str();len(sub);max();min();sum()"""
+# a = list()
+# b = list("FishC")
+# c = list((1,1,2,3,4,5))
+# print(max(b))
+# print(max(c))
+# print(max("string"))
+
+# tuple1=1,2,3,4,5
+# print(sum(tuple1))
+# print(sum(tuple1,10)) #第二个参数表示从该值开始加起，默认值是0
+
+"""sorted(iterable,key=None,reverse=False) 返回一个排序的列表"""
+# sort() 实现列表原地排序  sorted() 返回一个排序后的新列表
+#list=[7,1,2,3,4,5,6]
+#.sort()
+#print(list)
+#list1 = sorted(list)
+#print(list1)
+#print(list)
+
+"""reversed(sequence) 返回逆向迭代序列的值"""
+#reverse() 列表的内建方法 原地反转  reversed() 返回翻转后的迭代器对象
+# list = [5,4,3,2,1]
+# print(reversed(list))
+# for each in reversed(list):
+#     print(each,end=',')
+#     #print(each,sep='，')
+
+"""enumerate(iterable)"""
+# str="FishC"
+# for i in enumerate(str):
+#     print(i) # 返回序列号及对应元素 (0,'F') (1,'i')
+
+"""zip(iter1[,iter2[...]]) 返回由各个的迭代参数共同组成的元组"""
+# list=[1,3,5,7,9]
+# str="FishC"
+# tuple1=2,4,6,8
+# for i in zip(list,str,tuple1):
+#     print(i) #(1,'F') (3,'i') (5,'s')
+
+
+
+
+
 
